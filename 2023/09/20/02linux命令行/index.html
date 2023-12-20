@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="万里">
+    
+    <meta name="description" content="欢迎来到小万里工作室">
+    
+    
+    
+    
+    
+    
+    <title>linux命令行 | 小万里工作室</title>
+    <link href="http://example.com" rel="prefetch" />
+
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/js/jquery.min.js"></script>
+
+    
+<script src="/js/bootstrap.min.js"></script>
+
+    
+<script src="/js/aos.js"></script>
+
+    
+<script src="/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+<meta name="generator" content="Hexo 7.0.0"></head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://example.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">小万里工作室</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/test/">test</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/test/">test</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://example.com">小万里工作室</a>
+        >
+        <span>linux命令行</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/">linux命令行</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2023-09-20
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/">linux命令行</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2023-09-20
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
+                
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h1 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h1><p>shell英文翻译是壳，它是一个介于用户和系统内核之间起到翻译官作用的一个命令解释器，会把用户输入的命令翻译给内核然后去执行</p>
+<p>常见的shell比如说bash</p>
+<img src="C:\Users\万里\AppData\Roaming\Typora\typora-user-images\image-20231211224711832.png" alt="image-20231211224711832" style="zoom: 80%;" />
+
+<p>使用shell的两种方式</p>
+<ul>
+<li>交互式</li>
+<li>脚本</li>
+</ul>
+<h1 id="shell基础语法"><a href="#shell基础语法" class="headerlink" title="shell基础语法"></a>shell基础语法</h1><p>linux下一切皆文件</p>
+<p>linux是单支文件系统</p>
+<p>有一个systemd的父进程 其他进程都是他的子进程</p>
+<p>systemd生命周期：不断地fork出子进程</p>
+<p>systemd是一个pid为1的”大管家”,存在于”用户空间”,所有进程的父进程</p>
+<p>~ 家目录 </p>
+<p>cd 默认进入家目录</p>
+<p>cd +目录的绝对地址或相对地址</p>
+<p>localhost 主机名</p>
+<p>修改主机名 <code>hostnamectl set-hostname server1</code> 然后使用<code>bash</code>进行刷新</p>
+<h2 id="cal"><a href="#cal" class="headerlink" title="cal"></a>cal</h2><p><code>日历</code></p>
+<p>用法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># cal</span></span><br><span class="line">     十二月 2023</span><br><span class="line">日 一 二 三 四 五 六</span><br><span class="line">                1  2</span><br><span class="line"> 3  4  5  6  7  8  9</span><br><span class="line">10 11 12 13 14 15 16</span><br><span class="line">17 18 19 20 21 22 23</span><br><span class="line">24 25 26 27 28 29 30</span><br><span class="line">31</span><br><span class="line">[root@localhost ~]<span class="comment"># cal -m #指定星期一为第一列</span></span><br><span class="line">     十二月 2023</span><br><span class="line">一 二 三 四 五 六 日</span><br><span class="line">             1  2  3</span><br><span class="line"> 4  5  6  7  8  9 10</span><br><span class="line">11 12 13 14 15 16 17</span><br><span class="line">18 19 20 21 22 23 24</span><br><span class="line">25 26 27 28 29 30 31</span><br><span class="line">[root@localhost ~]<span class="comment"># cal -m --year #显示一整年的日历</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="一些常用的Linux文件"><a href="#一些常用的Linux文件" class="headerlink" title="一些常用的Linux文件"></a>一些常用的Linux文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 域名解析文件</span></span><br><span class="line">[root@localhost ~]<span class="comment"># cat /etc/resolv.conf</span></span><br><span class="line"><span class="comment"># Generated by NetworkManager</span></span><br><span class="line">nameserver 114.114.114.114</span><br><span class="line"><span class="comment"># 系统的主日志文件</span></span><br><span class="line">[root@localhost ~]<span class="comment"># tail -5 /var/log/messages</span></span><br><span class="line">Dec 11 18:01:42 localhost dbus[709]: [system] Activating service name=<span class="string">&#x27;org.freedesktop.problems&#x27;</span> (using servicehelper)</span><br><span class="line">Dec 11 18:01:42 localhost dbus[709]: [system] Successfully activated service <span class="string">&#x27;org.freedesktop.problems&#x27;</span></span><br><span class="line">Dec 11 18:01:42 localhost systemd: Started Session 38 of user root.</span><br><span class="line">Dec 11 18:01:42 localhost systemd-logind: New session 38 of user root.</span><br><span class="line">Dec 11 18:02:29 localhost systemd-logind: Removed session 16.</span><br><span class="line"><span class="comment">#linux下的垃圾桶 黑洞 只进不出 是字符类型的设备</span></span><br><span class="line">[root@localhost ~]<span class="comment"># ll -d /dev/null</span></span><br><span class="line">crw-rw-rw-. 1 root root 1, 3 12月 11 15:55 /dev/null</span><br><span class="line"><span class="comment"># 开机默认执行的脚本文件</span></span><br><span class="line">[root@localhost ~]<span class="comment"># cat /etc/rc.local</span></span><br><span class="line"><span class="comment">#!/bin/bash</span></span><br><span class="line"><span class="comment"># THIS FILE IS ADDED FOR COMPATIBILITY PURPOSES</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># It is highly advisable to create own systemd services or udev rules</span></span><br><span class="line"><span class="comment"># to run scripts during boot instead of using this file.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># In contrast to previous versions due to parallel execution during boot</span></span><br><span class="line"><span class="comment"># this script will NOT be run after all other services.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Please note that you must run &#x27;chmod +x /etc/rc.d/rc.local&#x27; to ensure</span></span><br><span class="line"><span class="comment"># that this script will be executed during boot.</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">touch</span> /var/lock/subsys/local</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="一些简单好玩的命令"><a href="#一些简单好玩的命令" class="headerlink" title="一些简单好玩的命令"></a>一些简单好玩的命令</h1><p><code>ping</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ping <span class="comment">#检测网路连通性</span></span><br><span class="line">ping -c 4 指定ping 4次 linux默认不指定会一直ping下去</span><br><span class="line">[root@localhost ~]<span class="comment"># ping -c 4 www.baidu.com</span></span><br><span class="line">PING www.a.shifen.com (180.101.50.242) 56(84) bytes of data.</span><br><span class="line">64 bytes from 180.101.50.242 (180.101.50.242): icmp_seq=1 ttl=128 time=12.7 ms</span><br><span class="line">64 bytes from 180.101.50.242 (180.101.50.242): icmp_seq=2 ttl=128 time=12.6 ms</span><br><span class="line">64 bytes from 180.101.50.242 (180.101.50.242): icmp_seq=3 ttl=128 time=12.4 ms</span><br><span class="line">64 bytes from 180.101.50.242 (180.101.50.242): icmp_seq=4 ttl=128 time=13.1 ms</span><br><span class="line"></span><br><span class="line">--- www.a.shifen.com ping statistics ---</span><br><span class="line">4 packets transmitted, 4 received, 0% packet loss, time 3004ms</span><br><span class="line">rtt min/avg/max/mdev = 12.481/12.758/13.176/0.291 ms</span><br></pre></td></tr></table></figure>
+
+<p><code>pstree</code></p>
+<p>进程树状图</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install -y psmisc</span></span><br><span class="line">[root@localhost ~]<span class="comment"># pstree -p #-p执行显示pid 进程号</span></span><br></pre></td></tr></table></figure>
+
+<p><code>sl</code></p>
+<p>linux下跑火车</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># yum install -y epel-release # 安装epel扩展源</span></span><br><span class="line">[root@localhost ~]<span class="comment"># yum install -y sl</span></span><br><span class="line">输入sl就可以跑起来了</span><br></pre></td></tr></table></figure>
+
+<p><code>cmatrix</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#首先第一步我们先来安装ncurses支持包</span></span><br><span class="line">yum install ncurses*</span><br><span class="line"><span class="comment">#第二步我们再来下载代码雨的源码包</span></span><br><span class="line">wget https://jaist.dl.sourceforge.net/project/cmatrix/cmatrix/1.2a/cmatrix-1.2a.tar.gz</span><br><span class="line">tar -zxvf cmatrix-1.2a.tar.gz</span><br><span class="line"><span class="comment">#进入到源码包</span></span><br><span class="line"><span class="built_in">cd</span> cmatrix-1.2a/</span><br><span class="line"><span class="comment">#释放编译文件</span></span><br><span class="line">./configure --prefix=/opt/cmatrix/</span><br><span class="line"><span class="comment">#编译且安装</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment">#进入目录，执行代码雨</span></span><br><span class="line"><span class="built_in">cd</span> /opt/cmatrix/</span><br><span class="line">./bin/cmatrix</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            万里
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>欢迎来到小万里工作室</p>
+</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">我的第一次博客</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/20/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">磁盘阵列</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">软件包管理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">LVM逻辑卷管理系统</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">linux基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">进程管理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">存储管理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">数据通信基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">linux网络设置</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">我的第一次博客</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">进程管理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">磁盘阵列</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">LVM逻辑卷管理系统</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">数据通信基础</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">linux网络设置</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">软件包管理</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/12%E9%98%B2%E7%81%AB%E5%A2%99%E4%B8%8Eselinux/">防火墙与selinux</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/">linux命令行</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2023/10/20/03%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">文件权限管理</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/2023/09/20/02linux%E5%91%BD%E4%BB%A4%E8%A1%8C/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/test/" style="font-size: 17.97489328940073px;" class="tag-cloud-link">test</a>
+    
+    <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 10.915685232228231px;" class="tag-cloud-link">linux基础知识</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
+                
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 万里 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+
+<script src="/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
+
+</html>
