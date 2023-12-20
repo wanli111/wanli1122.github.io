@@ -1,1425 +1,395 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="万里">
-    
-    <meta name="description" content="欢迎来到小万里工作室">
-    
-    
-    
-    
-    
-    
-    <title>小万里工作室</title>
-    <link href="http://example.com" rel="prefetch" />
-
-    
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/aos.css">
-<link rel="stylesheet" href="/css/style.css">
-
-    
-<script src="/js/jquery.min.js"></script>
-
-    
-<script src="/js/bootstrap.min.js"></script>
-
-    
-<script src="/js/aos.js"></script>
-
-    
-<script src="/js/highslide/highslide-full.min.js"></script>
-
-    
-<link rel="stylesheet" href="/js/highslide/highslide.css">
-
-    <style type="text/css">
-        @media (max-width: 768px) {
-            body {
-                background-color: #f0f0f0;
-                background: url('/imgs/xsbg.gif');
-                background-attachment: fixed;
-            }
-        }
-    </style>
-    
-    <!--<script type="text/javascript">
-      if (document.images) {
-        var avatar = new Image();
-        avatar.src = '/imgs/avatar.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
-        var previewsPreLoad = []
-        for(var i = 0; i < length; i++) {
-          previewsPreLoad.push(new Image())
-          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>小万里工作室</title><meta name="author" content="万里"><meta name="copyright" content="万里"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="欢迎来到小万里工作室">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小万里工作室">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="小万里工作室">
+<meta property="og:description" content="欢迎来到小万里工作室">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/wanli.png">
+<meta property="article:author" content="万里">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/wanli.png"><link rel="shortcut icon" href="/img/wanli.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小万里工作室',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-12-20 15:59:14'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
         }
       }
-    </script>-->
-<meta name="generator" content="Hexo 7.0.0"></head>
-<body>
-    <!-- 背景轮播图功能 -->
-    <section class="hidden-xs">
-    <ul class="cb-slideshow">
-        <li><span>天若</span></li>
-        <li><span>有情</span></li>
-        <li><span>天亦老</span></li>
-        <li><span>我为</span></li>
-        <li><span>长者</span></li>
-        <li><span>续一秒</span></li>
-    </ul>
-</section>
-    <!-- 欧尼酱功能, 谁用谁知道 -->
     
-    <header class="navbar navbar-inverse" id="gal-header">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target=".bs-navbar-collapse"
-                    aria-expanded="false">
-                <span class="fa fa-lg fa-reorder"></span>
-            </button>
-            <a href="http://example.com">
-                
-                <style>
-                    #gal-header .navbar-brand {
-                        height: 54px;
-                        line-height: 24px;
-                        font-size: 28px;
-                        opacity: 1;
-                        background-color: rgba(0,0,0,0);
-                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
-                    }
-                </style>
-                <!-- 这里使用文字(navbar_text or config.title) -->
-                <div class="navbar-brand">小万里工作室</div>
-                
-            </a>
-        </div>
-        <div class="collapse navbar-collapse bs-navbar-collapse">
-            <ul class="nav navbar-nav" id="menu-gal">
-                
-                
-                <li class="current">
-                    <a href="/">
-                        <i class="fa fa-home"></i>首页
-                    </a>
-                </li>
-                
-                
-                
-                <li class="">
-                    <a href="/archives">
-                        <i class="fa fa-archive"></i>归档
-                    </a>
-                </li>
-                
-                
-                
-                
-                <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
-                        <i class="fa fa-list"></i>分类
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li>
-                            <a href="/categories/test/">test</a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
-                </li>
-                
-                
-                
-                
-                
-                <li class="dropdown">
-                    <!-- TODO 添加hover dropdown效果 -->
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
-                        <i class="fa fa-tags"></i>标签
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li>
-                            <a href="/tags/test/">test</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                        </li>
-                        
-                        
-                        
-                    </ul>
-                </li>
-                
-                
-                
-                
-                <li class="">
-                    <a href="/about">
-                        <i class="fa fa-user"></i>关于我
-                    </a>
-                </li>
-                
-                
-            </ul>
-        </div>
-    </div>
-</header>
-    <div id="gal-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 gal-right" id="mainstay">
-                    
-<div class="alert well fade in" id="gal-issue" role="alert">
-    <!-- TODO 添加关闭公告框功能 -->
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <!-- 这里自行配置公告内容 -->
-    这里是公告内容
-    <br>
-    配置相关说明请看<strong>_config.yml</strong>
-    <!-- 自行配置公告内容结束 -->
-</div>
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
 
-<div id="article-list">
-     
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">12月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">
-                    <span>我的第一次博客</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/test/">test</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="我的第一次博客">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">
-                        <span>我的第一次博客</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-12-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/test/">test</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="我的第一次博客">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">12月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/12/20/hello-world/">
-                    <span>Hello World</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/12/20/hello-world/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/12/20/hello-world/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="Hello World">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/12/20/hello-world/">
-                        <span>Hello World</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-12-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/12/20/hello-world/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="Hello World">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/12/20/hello-world/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">23</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">
-                    <span>磁盘阵列</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="磁盘阵列">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">
-                        <span>磁盘阵列</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-23
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="磁盘阵列">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">22</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">
-                    <span>软件包管理</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview2.jpg" alt="软件包管理">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">
-                        <span>软件包管理</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-22
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">
-                    
-                    <img src="/imgs/preview/preview1.jpg" alt="软件包管理">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">21</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">
-                    <span>LVM逻辑卷管理系统</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="LVM逻辑卷管理系统">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">
-                        <span>LVM逻辑卷管理系统</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-21
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">
-                    
-                    <img src="/imgs/preview/preview1.jpg" alt="LVM逻辑卷管理系统">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">
-                    <span>linux基础</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="linux基础">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">
-                        <span>linux基础</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">
-                    
-                    <img src="/imgs/preview/preview2.jpg" alt="linux基础">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">
-                    <span>进程管理</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview2.jpg" alt="进程管理">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">
-                        <span>进程管理</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="进程管理">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
-                    <span>存储管理</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview4.jpg" alt="存储管理">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
-                        <span>存储管理</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="存储管理">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
-                    <span>数据通信基础</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview2.jpg" alt="数据通信基础">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
-                        <span>数据通信基础</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
-                    
-                    <img src="/imgs/preview/preview4.jpg" alt="数据通信基础">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
-    
-    <div class="data-article hidden-xs">
-        <span class="month">10月</span>
-        <span class="day">20</span>
-    </div>
-    <!-- 大型设备文章 -->
-    <section class="hidden-xs">
-        <div class="title-article">
-            <h1>
-                <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
-                    <span>linux网络设置</span>
-                </a>
-            </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-                
-            </span>
-            
-            
-            <!-- TODO 添加评论统计 -->
-            <!--<span class="label label-gal">
-                <i class="fa fa-comments"></i>
-                <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/#comments">739</a>
-            </span>-->
-        </div>
-        <div class="alert alert-gal article-body content-article">
-            <div class="item">
-                <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
-                    <div class="img">
-                        
-                        <img src="/imgs/preview/preview3.jpg" alt="linux网络设置">
-                    </div>
-                    <div class="info">
-                        
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="visible-xs">
-        <div class="title-article">
-            <center>
-                <h4>
-                    <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
-                        <span>linux网络设置</span>
-                    </a>
-                </h4>
-            </center>
-        </div>
-        <p></p>
-        <center>
-            <i class="fa fa-calendar"></i> 2023-10-20
-        </center>
-        <p></p>
-        <p></p>
-        <center>
-            
-            <i class="fa fa-tags"></i>
-            
-            <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">linux基础知识</a>
-            
-            
-            
-        </center>
-        <p></p>
-        <div class="alert alert-gal article-body content-article">
-            <p style="text-align: center;">
-                <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
-                    
-                    <img src="/imgs/preview/preview2.jpg" alt="linux网络设置">
-                </a>
-            </p>
-        </div>
-        
-        <a class="btn btn-danger pull-right read-more btn-block" href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">
-            阅读全文
-            <!--<span class="badge">739</span>-->
-        </a>
-    </section>
-</div>
-     
-</div>
-<!-- 前方最多7个 < 1 2 3 4 5 6 -->
-<!-- 前方超过第7页则分为 < 1 ... (n - 3) (n - 2) (n - 1) n, 此时前面为固定的6个 -->
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
 
-<!-- 后方最多8个 (n + 1) 到 (n + 7) > -->
-<!-- 如果末页和当前页相差超过7, 此时后面为固定的6个, (n + 1) (n + 2) (n + 3) ... total > -->
-
-
-
-<div id="gal-pagination" class="clearfix">
-    <ul class="pagination pagination-gal pull-right">
-        
-        
-        
-        
-        <li class="current">
-            <span>1</span>
-        </li>
-        
-        
-        <li>
-            <a href="/page/2">2</a>
-        </li>
-        
-        
-        
-        <li class="next">
-            <a href="/page/2/">»</a>
-        </li>
-        
-    </ul>
-</div>
-
-<!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
-
-                </div>
-                <aside class="col-md-4 gal-left" id="sidebar">
-    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
-<aside id="sidebar-search">
-    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <form class="form-inline clearfix" id="search-form" method="get"
-              action="/search/index.html">
-            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
-            <button class="btn btn-danger btn-gal" type="submit">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-    </div>
-</aside>
-    <aside id="sidebar-author">
-    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
-        <div class="panel-heading" style="text-align: center">
-            <i class="fa fa-quote-left"></i>
-            万里
-            <i class="fa fa-quote-right"></i>
-        </div>
-        <div class="author-panel text-center">
-            <img src="/imgs/avatar.jpg" width="140" height="140"
-                 alt="个人头像" class="author-image">
-            <p class="author-description"><p>欢迎来到小万里工作室</p>
-</p>
-        </div>
-    </div>
-</aside>
+        document.head.appendChild(script)
+      })
     
-    <aside id="sidebar-recent_comments">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-comments"></i>
-            最新评论
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush"></ul>
-    </div>
-</aside>
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
     
-    <!-- 要配置好leancloud才能开启此小工具 -->
-    
-    
-    <aside id="sidebar-recent_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            近期文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">我的第一次博客</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/12/20/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">磁盘阵列</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/">软件包管理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">LVM逻辑卷管理系统</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">linux基础</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">进程管理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">存储管理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">数据通信基础</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/">linux网络设置</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="sidebar-rand_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            随机文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/12/20/hello-world/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/">我的第一次博客</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/">linux基础</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/">进程管理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/">存储管理</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/">磁盘阵列</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/">LVM逻辑卷管理系统</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/">数据通信基础</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/12%E9%98%B2%E7%81%AB%E5%A2%99%E4%B8%8Eselinux/">防火墙与selinux</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/2023/10/20/10DHCP%20DNS%20NAT/">DHCP DNS NAT</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
-    
-    <aside id="gal-sets">
-        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-            <ul class="nav nav-pills pills-gal">
-
-                
-                <li>
-                    <a href="/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
-                </li>
-                
-                
-                <li>
-                    <a href="/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
-                </li>
-                
-            </ul>
-            <div class="tab-content">
-                
-                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
-    
-    <a href="/tags/test/" style="font-size: 16.136010305326728px;" class="tag-cloud-link">test</a>
-    
-    <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 13.181284704839356px;" class="tag-cloud-link">linux基础知识</a>
-    
-</div>
-                
-                
-                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
-    
-    <li>
-        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
-    </li>
-    
-    <li>
-        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
-    </li>
-    
-    <li>
-        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
-    </li>
-    
-</div>
-                
-                
-                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
-    
-    <li>
-        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
-    </li>
-    
-    <li>
-        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
-    </li>
-    
-    <li>
-        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
-    </li>
-    
-</div>
-                
-            </div>
-        </div>
-    </aside>
-    
-</aside>
-            </div>
-        </div>
-    </div>
-    <footer id="gal-footer">
-    <div class="container">
-        Copyright © 2018 万里 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
-    </div>
-</footer>
-
-<!-- 回到顶端 -->
-<div id="gal-gotop">
-    <i class="fa fa-angle-up"></i>
-</div>
-</body>
-
-<script src="/js/activate-power-mode.js"></script>
-
-<script>
-
-    // 配置highslide
-	hs.graphicsDir = '/js/highslide/graphics/'
-    hs.outlineType = "rounded-white";
-    hs.dimmingOpacity = 0.8;
-    hs.outlineWhileAnimating = true;
-    hs.showCredits = false;
-    hs.captionEval = "this.thumb.alt";
-    hs.numberPosition = "caption";
-    hs.align = "center";
-    hs.transitions = ["expand", "crossfade"];
-    hs.lang.number = '共%2张图, 当前是第%1张';
-    hs.addSlideshow({
-      interval: 5000,
-      repeat: true,
-      useControls: true,
-      fixedControls: "fit",
-      overlayOptions: {
-        opacity: 0.75,
-        position: "bottom center",
-        hideOnMouseOut: true
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
       }
-    })
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/test.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/hideCategory.min.css"><meta name="generator" content="Hexo 7.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wanli.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/test.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="小万里工作室"><span class="site-name">小万里工作室</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">小万里工作室</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/wanli111?tab=repositories" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/" title="我的第一次博客">我的第一次博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-20T00:11:16.000Z" title="发表于 2023-12-20 08:11:16">2023-12-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/test/">test</a></span></div><div class="content">this is test page</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/12/20/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-20T00:04:24.361Z" title="发表于 2023-12-20 08:04:24">2023-12-20</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-    // 初始化aos
-    AOS.init({
-      duration: 1000,
-      delay: 0,
-      easing: 'ease-out-back'
-    });
+More info: Writing
+Run server1$ hexo server
 
-</script>
-<script>
-	POWERMODE.colorful = 'true';    // make power mode colorful
-	POWERMODE.shake = 'true';       // turn off shake
-	// TODO 这里根据具体情况修改
-	document.body.addEventListener('input', POWERMODE);
-</script>
-<script>
-    window.slideConfig = {
-      prefix: '/imgs/slide/background',
-      ext: 'jpg',
-      maxCount: '6'
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" title="磁盘阵列">磁盘阵列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-23T00:11:16.000Z" title="发表于 2023-10-23 08:11:16">2023-10-23</time></span></div><div class="content">磁盘阵列类型RAID0将数据分散写到两块盘里面
+优点：读写速度快，缺点：故障率高
+
+RAID1一份主盘一份备份盘 进行备份冗余，保障数据的安全，但不会对读写速度起到作用
+
+RAID5奇偶校验盘 一份盘数据坏掉了，其他的盘可以通过奇偶校验信息去修复里面的损坏数据 缺点：写性能差每次写数据都要去读其他盘的奇偶校验信息，但读性能还可以
+
+RAID10先做RAID1 再做RAID0
+
+部署磁盘阵列
+
+1234mdadm -Cv /dev/md0 -a yes -n 4 -l 10 /dev/sdb /dev/sdc /dev/sdd /dev/sdemkfs.ext4 /dev/md0mkdir /RAIDmount /dev/md0 /RAID
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/" title="软件包管理">软件包管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-22T00:11:16.000Z" title="发表于 2023-10-22 08:11:16">2023-10-22</time></span></div><div class="content">软件包管理软件类型
+源码包
+
+需要进行编译
+
+
+二进制包(已经编译好了)
+
+redhat&#x2F;centos
+工具
+rpm
+yum
+
+
+
+
+ubuntu
+工具
+dpkg
+apt
+
+
+
+
+
+
+
+yum官方源命令123456789101112yum repolist #查看所有源源标识 源名称 状态base/7/x86_64 CentOS-7 - Base - mirrors.ali 10,072extras/7/x86_64 CentOS-7 - Extras - mirrors.a 512updates/7/x86_64 CentOS-7 - Updates - mirrors. 4,050repolist: 14,634# 更换腾讯源mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup #备份wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.cloud.tencent.com/repo/centos7_base.re ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/" title="LVM逻辑卷管理系统">LVM逻辑卷管理系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-21T00:11:16.000Z" title="发表于 2023-10-21 08:11:16">2023-10-21</time></span></div><div class="content">LVM逻辑卷管理系统为什么要引入逻辑卷管理系统
+解决硬盘在创建分区后不易修改大小的缺陷
+
+具体来说，逻辑卷管理提供了以下几方面的优势：
+
+灵活性：逻辑卷的大小可以动态调整，而且不会丢失现有数据。新加入的硬盘也可以被抽象封装，不会改变现有上层的逻辑卷，这样就可以轻松地管理磁盘空间。
+容错性：如果磁盘开始出现错误，可以通过卷组将替换磁盘注册为物理卷，并且逻辑卷的范围可迁移到新磁盘，这样就可以提高系统的容错能力。
+优化存储空间：逻辑卷可以由多个物理卷组成，这样就可以将数据分散到不同的物理硬盘上，从而提高存储空间的利用率和读写性能。
+方便的扩展：逻辑卷可以方便地扩展到多个物理硬盘上，这样就可以方便地增加存储空间。
+
+总之，引入逻辑卷管理可以大大提高磁盘管理的灵活性、容错性、优化存储空间和方便的扩展性。
+部署
+添加两块盘 sdb sdc
+1234567891011121314151617181920212223242526272829#创建物理卷pvcreate /dev/sdb /dev/sdc	Physical volume &quot;/dev/sdb&quot; successfully ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/20/01linux%E5%9F%BA%E7%A1%80/" title="linux基础">linux基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T00:11:16.000Z" title="发表于 2023-10-20 08:11:16">2023-10-20</time></span></div><div class="content">linuxLinux系统内核指的是一个由Linus Torvalds负责维护，提供硬件抽象层、硬盘及文件系统控制及多 任务功能的系统核心程序。
+Linux发行套件系统是我们常说的Linux操作系统，也即是由Linux内核与各种常用软件的集合产品
+
+操作系统
+组成：内核+子系统
+
+分类
+linux
+
+linux一般是用于企业服务器，是一款免费开源的软件，性能比较稳定
+基于linux系统开发了很多的系统比如redhat，腾讯的Tlinux，ubuntu，centos，alpha等
+
+windows
+
+闭源操作系统，用于日常办公游戏
+
+mac
+
+闭源 苹果公司开发的操作系统
+
+unix
+
+一般用于硬件
+子系统
+进程
+内存RAM
+物理内存 DDR内存条
+虚拟内存 硬盘模拟 swap交换空间
+
+
+文件
+网络
+设备（usb块设备）
+
+linux远程连接工具
+xshell
+putty
+mobaxterm (一般用这个比较好用)
+
+红帽redhat认证redhat是目前全球最大的Linux商业公司，redhat为Linux技术工程师提供了一个考试认证，通过这个考 试认证的工程师，可以获得redhat公 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/20/04%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/" title="进程管理">进程管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T00:11:16.000Z" title="发表于 2023-10-20 08:11:16">2023-10-20</time></span></div><div class="content">进程管理进程类型
+守护进程：开机自启，跟终端无关
+前台进程：可以用ctrl+d打断
+
+生命周期systemd父进程fork出子进程的一个过程,进程id(pid) 是唯一的
+
+systemd简介123#存在于“用户空间” 应用程序#是一个pid为1的“大管家”#是所有进程的父进程
+
+基础用法12345678910111213141516171819systemctl start httpdsystemctl stop httpd systemlctl enable httpd #开机自启systemlctl disable httpd #关闭开机自启systemlctl status httpd #查看进程状态[root@localhost ~]# yum install -y httpd[root@localhost ~]# systemctl start httpd[root@localhost ~]# systemctl enable httpd[root@localhost ~]# systemctl status httpd● httpd.service - The Apach ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/20/05%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/" title="存储管理">存储管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T00:11:16.000Z" title="发表于 2023-10-20 08:11:16">2023-10-20</time></span></div><div class="content">存储管理硬盘
+固态硬盘 SSD
+机械硬盘 HDD
+
+分区表先看个视频在往下看
+https://www.bilibili.com/video/BV1kx411Q7Gw?spm_id_from=333.337.search-card.all.click&amp;vd_so
+MBR格式工具fdisk
+最多四个主分区，最大上限2T 可以把一个主分区变成扩展分区，扩展分区里面可以划分无数个逻辑分区
+GPT格式没有限制
+工具 gdisk
+linux常见目录名称
+操作分区一般硬盘都是以/dev/sd开头的
+
+主分区从1~4
+扩展分区从5开始
+
+
+fdisk1234567891011[root@localhost ~]# lsblkNAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINTsda 8:0 0 50G 0 disk├─sda1 8:1 0 1G 0 part /boot└─sda2 8:2 0 49G 0 part├─centos-root 253:0 0 47G 0 lvm /└─centos-swap 253:1 0 2G 0 lvm [SWAP]sdb 8:16 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/20/09%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80/" title="数据通信基础">数据通信基础</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T00:11:16.000Z" title="发表于 2023-10-20 08:11:16">2023-10-20</time></span></div><div class="content">数据通信基础OSI七层模型
+由iso组织指定
+口诀：物联网叔会使用
+
+
+
+物理层
+进行比特流的传输
+
+
+
+数据链路层
+存放mac地址
+
+
+网络层
+存放ip地址 进行路由寻址
+
+
+传输层
+建立主机端到端的连接，存放端口号 1-65536个端口 tcp&#x2F;udp协议也在这一层
+
+
+会话层
+建立维护管理会话
+
+
+表示层
+处理数据格式数据加密
+
+
+应用层
+提供应用程序间数据通信
+
+
+私有ip地址
+私有ip可以重复，但是只能在内网中使用，我们一般上网是通过路由器，就是默认网关，他会从运营商那里分配到一个公网ip，路由器帮我们访问外网然后把资源返回给我们
+子网掩码划分主机位和网络位
+和ip地址一起使用，用于描述一个ip地址的网络部分和主机部分
+ip地址的分类
+
+
+A类
+1.0.0.0~127.255.255.255&#x2F;8
+
+
+
+B类
+128.0.0.0~191.255.255.255&#x2F;16
+
+
+C类
+192.0.0.0~223.255.255.255&#x2F;24
+
+
+D类
+组播 没有网络概念
+
+
+E类
+其他 用不到
+
+
+TCP&#x2F;UDPTCP传输控制协议
+面向 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/10/20/11linux%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE/" title="linux网络设置">linux网络设置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T00:11:16.000Z" title="发表于 2023-10-20 08:11:16">2023-10-20</time></span></div><div class="content">linux网络设置vmware三种网卡配置
+vmnet0 桥接模式 单独分配一个物理网卡
+vmnet1 仅主机模式 无法上外网 和主机共享ip
+vmnet8 NAT模式 有一个虚拟的NAT 起到路由网关的作用 ip是192.168.208.2
+192.168.208.1是本机在内网的一个ip
+配置网络服务nmtui图形化配置
+配置完后重启网络
+systemctl restart network
+配置文件12345678910111213141516171819202122vim /etc/sysconfig/network-scripts/ifcfg-ens33TYPE=EthernetPROXY_METHOD=noneBROWSER_ONLY=noBOOTPROTO=noneDEFROUTE=yesIPV4_FAILURE_FATAL=noIPV6INIT=yesIPV6_AUTOCONF=yesIPV6_DEFROUTE=yesIPV6_FAILURE_FATAL=noIPV6_ADDR_GEN_MODE=stable-privacyNAME=ens33UUID=7cb2fd3e- ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wanli.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">万里</div><div class="author-info__description">欢迎来到小万里工作室</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/wanli111?tab=repositories" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">T欢迎来到小万里工作室</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2023/12/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2/" title="我的第一次博客">我的第一次博客</a><time datetime="2023-12-20T00:11:16.000Z" title="发表于 2023-12-20 08:11:16">2023-12-20</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/12/20/hello-world/" title="Hello World">Hello World</a><time datetime="2023-12-20T00:04:24.361Z" title="发表于 2023-12-20 08:04:24">2023-12-20</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/10/23/07%E7%A3%81%E7%9B%98%E9%98%B5%E5%88%97/" title="磁盘阵列">磁盘阵列</a><time datetime="2023-10-23T00:11:16.000Z" title="发表于 2023-10-23 08:11:16">2023-10-23</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/10/22/08%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86/" title="软件包管理">软件包管理</a><time datetime="2023-10-22T00:11:16.000Z" title="发表于 2023-10-22 08:11:16">2023-10-22</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2023/10/21/06%20LVM%E9%80%BB%E8%BE%91%E5%8D%B7%E7%AE%A1%E7%90%86/" title="LVM逻辑卷管理系统">LVM逻辑卷管理系统</a><time datetime="2023-10-21T00:11:16.000Z" title="发表于 2023-10-21 08:11:16">2023-10-21</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/test/"><span class="card-category-list-name">test</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/test/" style="font-size: 1.1em; color: #999">test</a> <a href="/tags/linux%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 1.5em; color: #99a9bf">linux基础知识</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">11</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">6.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-12-20T07:59:14.626Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 万里</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
     }
-</script>
-
-<script src="/js/hs.js"></script>
-<script src="/js/blog.js"></script>
-
-
-
-
-</html>
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["你在抱怨什么呢","为明天到来的事，说人生像是没有意义","没有选择会是唯一的路","这不是你自己的问题，人终归要好好去生活"])
+  } else {
+    document.getElementById("subtitle").textContent = "你在抱怨什么呢"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/js/hideCategory.min.js"></script><script src="/js/test.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/hideCategory.min.css"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
